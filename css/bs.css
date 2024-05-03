@@ -1,0 +1,218 @@
+html
+{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+/* section 1 */
+.home
+{
+    background-image: url(../images/Computer-Programmer.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.bg{
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+nav{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color : red; */
+    
+    padding: 20px 0;
+    width: 100%;
+}
+
+nav .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    
+    
+}
+nav .logo h1{
+    color: rgb(235, 26, 95) !important;
+}
+nav .ul_main{
+    color: white;
+}
+nav .logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav .logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+nav .logo h1{
+    padding-left: 20px;
+    font-size: 45px;
+    color: white;
+}
+nav .ul_main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+nav .ul_main li{
+    position: relative;
+    list-style: none;
+    padding: 20px 10px ;
+    font-size: 20px;  
+    
+}
+nav .ul_main li a{
+    text-decoration: none;
+    color: white !important;
+    font-size: 20px;
+}
+nav .ul_main li:hover .show {
+    opacity: 1;
+    transition: all .5s;
+    z-index: 1;
+    margin-top: 0;
+    transition: all .5s;
+}
+nav .ul_main li .show{
+    background-color: rgba(0, 0, 0 , .5);
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    opacity: 0;
+    z-index: -1;
+    width: 130%;
+    padding: 10px 0 ;
+    margin-top: 40px;
+}
+nav .ul_main .after::after{
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    margin-left: 9px;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(235, 26, 95);
+}
+nav .ul_main .li:hover .after::after{
+    width: 85%;
+    transition: all .5s;
+}
+
+nav .ul_main li .show li{
+    padding:5px 15px;
+    color: white;
+    font-size: 16px;
+    margin: 5px 0;
+}
+nav .ul_main li .show li:hover{
+    color: rgb(235, 26, 95);
+    transition: all .2s;
+}
+
+nav .social_media{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: white;
+}
+nav .social_media i{
+    margin: 0 10px  ;
+}
+nav .social_media .bg_social{
+    width: 40px;
+    height: 40px;
+    background-color:  transparent;
+    border:  solid 1px gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px  ;
+
+}
+nav .social_media a{
+    color: rgb(235, 26, 95) !important;
+}
+
+header{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 30px;
+}
+.header{
+    background-color: white;
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+  
+   
+}
+.header h2{
+    text-align: center;
+    padding: 9px 0 ;
+    background-color: rgb(202, 0, 67);
+    border-radius: 30px;
+    color: white;
+}
+.header ul{
+    /* padding: 0 30px; */
+    margin: 20px 30px 20px 30px;
+}
+.header ul li{
+    padding: 10px 0 0 0 ;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: rgb(24, 24, 24);
+    color: white ;
+}
+.footer h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footer h3{
+text-align: center;  
+  /* background-color: red; */
+  margin: 10px 0;
+}
+.footer h5{
+    text-align: center;  
+      /* background-color: red; */
+      padding: 30px 0 0 0;
+    }
